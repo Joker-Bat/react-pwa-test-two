@@ -12,12 +12,12 @@ module.exports = merge(common, {
   devtool: false,
   output: {
     path: paths.build,
-    publicPath: '/',
+    publicPath: '/react-pwa-test-two',
     filename: 'js/[name].[contenthash].bundle.js',
   },
   plugins: [
     new Dotenv({
-      path: './.env.production',
+      path: './.env',
     }),
     // Extracts CSS into separate files
     // Note: style-loader is for development, MiniCssExtractPlugin is for production

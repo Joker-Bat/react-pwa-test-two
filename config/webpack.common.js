@@ -7,6 +7,8 @@ const MiniCssExtractPlugin = require('mini-css-extract-plugin') // extract css t
 const tailwindcss = require('tailwindcss')
 const autoprefixer = require('autoprefixer') // help tailwindcss to work
 
+const InterpolateHtmlPlugin = require('react-dev-utils/InterpolateHtmlPlugin')
+
 module.exports = {
   // Where webpack looks to start building the bundle
   entry: [paths.src + '/index.js'],
@@ -15,7 +17,7 @@ module.exports = {
   output: {
     path: paths.build,
     filename: '[name].bundle.js',
-    publicPath: '/',
+    publicPath: '/react-pwa-test-two',
   },
 
   // Customize the webpack build process
@@ -52,6 +54,10 @@ module.exports = {
       favicon: paths.src + '/assets/icons/favicon.png',
       template: paths.public + '/index.html', // template file
       filename: 'index.html', // output file
+    }),
+
+    new InterpolateHtmlPlugin(HtmlWebpackPlugin, {
+      PUBLIC_URL: '/react-pwa-test-two',
     }),
   ],
 

@@ -1,0 +1,1 @@
+self.addEventListener("fetch",(function(e){console.log("Called service-worker.js"),e.respondWith(caches.match(e.request).then((function(t){return t||fetch(e.request)})))}));

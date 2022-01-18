@@ -2,7 +2,7 @@
   "license": "MIT",
   "name": "test-deploy-aws",
   "version": "1.0.0",
-  "homepage": "https://joker-bat.github.io/react-pwa-test-two",
+  "homepage": "https://joker-bat.github.io/react-pwa-test-two/",
   "description": "Testing the deployment of react",
   "dependencies": {
     "@reduxjs/toolkit": "^1.6.0",
@@ -12,6 +12,7 @@
     "react": "^17.0.2",
     "react-beautiful-dnd": "^13.1.0",
     "react-dates": "^21.8.0",
+    "react-dev-utils": "^12.0.0-next.31",
     "react-dom": "^17.0.2",
     "react-file-drop": "^3.1.2",
     "react-icons": "^4.2.0",
@@ -34,7 +35,8 @@
     "lint": "eslint src --ext .js,.jsx && yarn prettify",
     "lint-fix": "eslint src --ext .js,.jsx --fix && yarn prettify",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "build-test": "PUBLIC_URL=/react-pwa-test-two/ NODE_ENV=production webpack --config config/webpack.prod.js"
   },
   "lint-staged": {
     "*.{js,jsx}": [
