@@ -4,7 +4,7 @@
   "start_url": ".",
   "background_color": "#333333",
   "description": "My first web pwa app to test, it its's working or not",
-  "display": "fullscreen",
+  "display": "standalone",
   "theme_color": "purple",
 
   "icons": [
@@ -33,9 +33,7 @@
   "shortcuts": [
     {
       "url": "/",
-      "short_name": "Home",
-      "name": "Homepage",
-      "description": "Go to home page"
+      "name": "Homepage"
     },
     {
       "url": "/cart",
