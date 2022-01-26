@@ -18,6 +18,7 @@ module.exports = {
     path: paths.build,
     filename: '[name].bundle.js',
     publicPath: '/react-pwa-test-two',
+    // publicPath: '/',
   },
 
   // Customize the webpack build process

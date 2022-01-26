@@ -14,11 +14,11 @@ module.exports = merge(common, {
   // Spin up a server for quick development
   devServer: {
     historyApiFallback: true,
-    static: paths.build,
+    static: paths.public,
     open: false,
     compress: true,
     hot: true,
-    port: 3000,
+    port: 3001,
   },
 
   module: {
