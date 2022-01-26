@@ -5,7 +5,7 @@
   "background_color": "#333333",
   "description": "My first web pwa app to test, it its's working or not",
   "display": "fullscreen",
-  "theme_color": "#888888",
+  "theme_color": "purple",
 
   "icons": [
     {
@@ -22,6 +22,33 @@
       "src": "android-icon-192x192.png",
       "sizes": "192x192",
       "type": "image/png"
+    },
+    {
+      "src": "maskable_icon_x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "url": "/",
+      "short_name": "Home",
+      "name": "Homepage",
+      "description": "Go to home page"
+    },
+    {
+      "url": "/cart",
+      "short_name": "Cart",
+      "name": "Cartpage",
+      "description": "Go to cart page",
+      "icons": [
+        {
+          "src": "maskable_icon_x96.png",
+          "sizes": "96x96",
+          "type": "image/png"
+        }
+      ]
     }
   ]
 }
